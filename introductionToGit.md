@@ -156,3 +156,44 @@ You could rewrite the line how it was originally, but what if you forgot the exa
 * We create them to work on a new project feature, but the end goal is to merge that feature into the master branch. 
 * After the branch has been integrated into master, it has served its purpose and can be deleted.
 * The command `git branch -d branch_name` will delete the specified branch from your Git project.
+
+---
+#GIT TEAMWORK
+
+---
+# Cloning an existing repository
+* `git clone remote_location clone_name`
+* e.g. `git clone https://github.com/mariannitapaes/mariannitapaes.github.io.git .`
+* Like `git init`, cloning is generally a one-time operation 
+* Once a developer has obtained a working copy, all version control operations are managed through their local repository
+* **remote_location** tells Git where to go to find the remote. This could be a web address, or a filepath, such as:
+<em>https://github.com/mariannitapaes/mariannitapaes.github.io.git</em>
+* **clone_name** is the name you give to the directory in which Git will clone the repository, `.` means at the current folder
+
+---
+# Configuration & set up
+* `git push -u <remote_name> <local_branch_name>`
+* This command will map remote repository at <remote_repo_url> to a ref in your local repo under <remote_name>. 
+* Once you have mapped the remote repo you can push local branches to it.
+
+---
+# git fetch
+* The original Git project may have changed in some way. 
+* If so, your clone will no longer be up-to-date.
+* An easy way to see if changes have been made to the remote and bring the changes down to your local copy is with: `git fetch`
+* This command will not merge changes from the remote into your local repository. It brings those changes onto what's called a remote branch
+
+---
+# merge 
+* New commits may have been fetched to your local copy of the Git project, those commits are on the origin/masterbranch.
+* Your local master branch has not been updated yet, so you can't view or make changes to any of the work added.
+* Integrate origin/master into your local master branch `git merge origin/master`
+
+---
+# git push
+* Share our work with masterbranch
+* `git push origin your_branch_name` will push your branch up to the remote, origin
+* From there the admin can review your branch and merge your work into the masterbranch, making it part of the definitive project version.
+* Git informs us that the branch bio-questions was pushed up to the remote. Sally can now review your new work and can merge it into the remote's master branch.
+
+
