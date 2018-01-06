@@ -11,8 +11,8 @@
 * `git config --global user.name "Marianna Skiada"`<br/>
 * `git config --global user.email "mskiada@aueb.gr"`<br/>
 * `git config --list`
-
 ---
+
 # Help
 * `git help –config`
 
@@ -23,6 +23,7 @@
 * __A Repository:__ where Git permanently stores those changes as different versions of the project<br/><br/>
 ![](https://github.com/mskiada/softsy_full_2017/blob/master/images/workflow.jpg)
 ---
+
 # Initializing a new repository
 * To create a new repo, use the `git init` command.
 * `git init` is a one-time command you use during the initial setup of a new repo. 
@@ -34,10 +35,12 @@
 * `rm -rt .git`
 * `rd /s /q .git`
 ---
+
 # Git status
 * In the output, notice the file in red under untracked files. 
 * Untracked means that Git sees the file but has not started tracking changes yet.
 ---
+
 # .gitignore
 * `echo "a gitignore file">> .gitignore`
 * `echo "" > .gitignore`
@@ -95,7 +98,6 @@ You could rewrite the line how it was originally, but what if you forgot the exa
 # git reset (1)
 * We can unstage that file from the staging area using `git reset HEAD filename`
 * This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area.
-
 
 ---
 # git reset (2)
