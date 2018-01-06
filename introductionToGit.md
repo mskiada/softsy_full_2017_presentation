@@ -17,5 +17,5 @@
 # Git Workflow
 * __A Working Directory:__ where you'll be doing all the work: creating, editing, deleting and organizing files<br/>
 * __A Staging Area:__ where you'll list changes you make to the working directory<br/>
-* __A Repository:__ where Git permanently stores those changes as different versions of the project
+* __A Repository:__ where Git permanently stores those changes as different versions of the project<br/><br/>
 ![](https://github.com/mskiada/softsy_full_2017/blob/master/images/workflow.jpg)
