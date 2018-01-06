@@ -3,7 +3,7 @@
              https://git-scm.com/downloads
 2. Open **cmd**
 3. Verify the installation was successful
-	    ```git --version```
+	    `git --version`
 
 ---
 # Set config values
