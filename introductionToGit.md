@@ -11,17 +11,19 @@
 *  `git config  --global user.name "Marianna Skiada" `
 *  `git config  --global user.email "mskiada@aueb.gr" `
 *  `git config  --list`
+
 ---
 
 # Help
 * `git help –config`
+
 ---
 
 # Git Workflow
 * <em>A Working Directory:</em> where you'll be doing all the work: creating, editing, deleting and organizing files<br/>
 * <em>A Staging Area:</em> where you'll list changes you make to the working directory<br/>
 * <em>A Repository:</em> where Git permanently stores those changes as different versions of the project<br/><br/><br/>
- ![workflow](https://github.com/mskiada/softsy_full_2017/blob/master/images/workflow.jpg)
+ ![](images/workflow.jpg)
 ---
 
 # Initializing a new repository
