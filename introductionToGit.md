@@ -88,9 +88,9 @@ In the output, notice:
 ---
 
 # git show head
-In Git, the commit you are currently on is known as the HEADcommit. <br/>
-To see the HEAD commit, enter: `git show HEAD`<br/>
-The output of this command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
+* In Git, the commit you are currently on is known as the HEADcommit.
+* To see the HEAD commit, enter: `git show HEAD`
+* The output of this command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
 ---
 
 # git checkout
