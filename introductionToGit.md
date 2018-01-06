@@ -1,7 +1,7 @@
 # First Steps
 1. Download Git:
              https://git-scm.com/downloads
-2. Open **cmd**
+2. Open <em>cmd</em>
 3. Verify the installation was successful
 	    `git --version`
 
