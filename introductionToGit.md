@@ -117,7 +117,7 @@ You could rewrite the line how it was originally, but what if you forgot the exa
 
 ---
 # git branch (1)
-* Check what branch you are currently on.
+* Check what branch you are currently on `git branch`
 * In the output, the `*` (asterisk) is showing you what branch you’re on.
 
 ----
