@@ -110,5 +110,48 @@ You could rewrite the line how it was originally, but what if you forgot the exa
 * This command works by using the first 7 characters of the SHA of a previous commit. For example, if the SHA of the previous commit is 5d692065cf51a2f50ea8e7b19b5a7ae512f633ba, use:
 `git reset 5d69206`
 * HEAD is now set to that previous commit.
+----
 
+# Branching
+* Up to this point, you've worked in a single Git branch called master.
+* Git allows us to create branches to experiment with versions of a project. 
+* It will have no effect on the master branch until you're ready to merge the happy ending to the master branch.
 
+# git branch (1)
+* Check what branch you are currently on.
+* In the output, the `*` (asterisk) is showing you what branch you’re on.
+----
+
+# git branch (2)
+* Create a new branch:  `git brach mitsos-branch` 
+* Be sure to name your branch something that describes the purpose of the branch. 
+* Also, branch names can’t contain whitespaces: mitsos-branch and mitsos_branch valid branch names, but mitsos branch is not.
+---
+
+# git checkout
+* The master and fencing branches are identical: they share the same exact commit history. 
+* You can switch to any existing branch with `git checkout branch_name`
+* Once you switch branch, be now able to make commits on the branch that have no impact on master.
+* You can continue your workflow, while master stays intact
+---
+
+# Branching Overview
+----
+
+# git merge
+* 'git merge branch_name'
+* Your goal is to update master with changes you made to fencing.
+* Fencing is the giver branch, since it provides the changes. 
+* Master is the receiver branch, since it accepts those changes.
+
+# merge conflict(1)
+* What would happen if you made a commit on master before you merged the two branches? 
+* Furthermore, what if the commit you made on master altered the same exact text you worked on in fencing? 
+* When you switch back to master and ask Git to merge the two branches, Git doesn't know which changes you want to keep.
+* This is called a merge conflict.
+
+# delete branch
+* Branches are usually a means to an end. 
+* We create them to work on a new project feature, but the end goal is to merge that feature into the master branch. 
+* After the branch has been integrated into master, it has served its purpose and can be deleted.
+* The command `git branch -d branch_name` will delete the specified branch from your Git project.
