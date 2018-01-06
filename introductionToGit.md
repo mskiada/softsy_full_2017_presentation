@@ -5,7 +5,6 @@
 3. Verify the installation was successful
 	    `git --version`
 
----
 # Set config values
 #### Configure your Git username and email
 *  `git config  --global user.name "Marianna Skiada" `
