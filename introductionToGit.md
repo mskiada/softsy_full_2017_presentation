@@ -89,13 +89,13 @@ You could rewrite the line how it was originally, but what if you forgot the exa
 * The command `git checkout HEAD filename` will restore the file in your working directory to look exactly as it did when you last made a commit. (το working directory παίρνει τις τιμές του commit)
 
 ---
-# git reset
+# git reset (1)
 * We can unstage that file from the staging area using `git reset HEAD filename`
 * This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area.
 
 
 ---
-# git reset 2
+# git reset (2)
 * Just like retracing your steps on that hike, Git enables you to rewind to the part before you made the wrong turn. You can do this with:`git reset commit_SHA`
 * This command works by using the first 7 characters of the SHA of a previous commit. For example, if the SHA of the previous commit is 5d692065cf51a2f50ea8e7b19b5a7ae512f633ba, use:
 `git reset 5d69206`
