@@ -20,7 +20,8 @@
 # Git Workflow
 * **A Working Directory:** where you'll be doing all the work: creating, editing, deleting and organizing files<br/>
 * **A Staging Area:** where you'll list changes you make to the working directory<br/>
-* **A Repository:** where Git permanently stores those changes as different versions of the project<br/><br/>
+* **A Repository:** where Git permanently stores those changes as different versions of the project<br/><br/><br/>
+
 ![workflow](https://github.com/mskiada/softsy_full_2017/blob/master/images/workflow.jpg)
 
 ---
