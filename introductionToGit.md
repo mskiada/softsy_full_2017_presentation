@@ -12,9 +12,7 @@
 * `git config --list`
 ---
 # Help
-git help \–config<br/>
-or <br/>
-`git config \-\-help` <br/>
+* git help –config<br/>
 ---
 # Git Workflow
 * __A Working Directory:__ where you'll be doing all the work: creating, editing, deleting and organizing files<br/>
