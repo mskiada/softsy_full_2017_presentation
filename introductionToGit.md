@@ -51,7 +51,7 @@
 # Saving changes to the repository
 1. Find direcory `cd /path/to/project `
 2. Create new file `echo "" >> Example.java`
-3. Add file to staging  `git add Example.java` (ή git add –all)
+3. Add file to staging  `git add Example.java` (or git add –all)
 4. Check the current state of the repository `git status`
 5. check the differences between the working directory and the staging area `git diff`
 6. Save changes in repository `git commit -m "added Example.java to the repo"`
@@ -63,9 +63,9 @@
 ---
 
 # git diff
-Since the file is tracked, we can check the differences between the working directory and the staging area 
+* Since the file is tracked, we can check the differences between the working directory and the staging area 
 <br/>with:`git diff filename`<br/>
-Here, filename is Example.java so `git diff Example.java`
+* Here, filename is Example.java so `git diff Example.java`
 ---
 
 # git commit
