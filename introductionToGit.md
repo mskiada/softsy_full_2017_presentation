@@ -22,12 +22,12 @@
 ---
 # Initializing a new repository
 * To create a new repo, use the `git init` command.
-* git init is a one-time command you use during the initial setup of a new repo. 
+* `git init` is a one-time command you use during the initial setup of a new repo. 
 * Executing this command will create a new .git subdirectory in your current working directory. 
 * This will also create a new master branch. 
 ---
 
-# Remove
+# Remove from staging
 * rm -rt .git
 * rd /s /q .git
 ---
@@ -36,16 +36,44 @@
 * Untracked means that Git sees the file but has not started tracking changes yet.
 ---
 # .gitignore
-* echo niaou >> .gitignore
+* echo "a gitignore file >> .gitignore
 * echo "" > .gitignore
 * echo null > .gitignore
 ---
 # Saving changes to the repository
-* cd /path/to/project 
-* echo "test content for git tutorial" >> CommitTest.txt 
-* git add CommitTest.txt (ή git add –all)
-* git commit -m "added CommitTest.txt to the repo"
+1. `cd /path/to/project `
+2. `echo "" >> Example.java`
+3. `git add Example.java` (ή git add –all)
+4. `git status`
+5. `git diff`
+5. `git commit -m "added Example.java to the repo"`
+---
+# git add
+1. In order for Git to start tracking Example.java, the file needs to be added to the staging area.
+We can add a file to the staging area with: `git add Example.java`
 
+---
+# git diff
+Since the file is tracked, we can check the differences between the working directory and the staging area with:
+`git diff filename`
+Here, filename is Example.java
+---
+# git commit
+A commit is the last step in our Git workflow.
+A commit permanently stores changes from the staging area inside the repository.
+the option -m followed by a message. Here's an example: git commit -m "Complete first line of dialogue"
+Standard Conventions for Commit Messages:
+* Must be in quotation marks
+* Written in the present tense
+* Should be brief (50 characters or less) when using -m
+---
+# git log
+Often with Git, you'll need to refer back to an earlier version of a project. Commits are stored chronologically in the repository and can be viewed with `git log`<br/>
+In the output, notice:
+* A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
+* The commit author (you!)
+* The date and time of the commit
+* The commit message
 
 
 
