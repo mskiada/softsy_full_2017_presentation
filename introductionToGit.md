@@ -27,45 +27,45 @@
 * This will also create a new master branch. 
 ---
 
-# Remove from staging
-* rm -rt .git
-* rd /s /q .git
+# Remove Repository
+* `rm -rt .git`
+* `rd /s /q .git`
 ---
 # Git status
 * In the output, notice the file in red under untracked files. 
 * Untracked means that Git sees the file but has not started tracking changes yet.
 ---
 # .gitignore
-* echo "a gitignore file >> .gitignore
+* echo "a gitignore file">> .gitignore
 * echo "" > .gitignore
 * echo null > .gitignore
 ---
 # Saving changes to the repository
-1. `cd /path/to/project `
-2. `echo "" >> Example.java`
-3. `git add Example.java` (ή git add –all)
-4. `git status`
-5. `git diff`
-5. `git commit -m "added Example.java to the repo"`
+1. Find direcory `cd /path/to/project `
+2. Create new file `echo "" >> Example.java`
+3. Add file to staging  `git add Example.java` (ή git add –all)
+4. Check the current state of the repository `git status`
+5. check the differences between the working directory and the staging area `git diff`
+6. Save changes in repository `git commit -m "added Example.java to the repo"`
 ---
 # git add
-1. In order for Git to start tracking Example.java, the file needs to be added to the staging area.
+In order for Git to start tracking *Example.java*, the file needs to be added to the staging area.
 We can add a file to the staging area with: `git add Example.java`
 
 ---
 # git diff
 Since the file is tracked, we can check the differences between the working directory and the staging area with:
 `git diff filename`
-Here, filename is Example.java
+Here, filename is Example.java so `git diff Example.java`
 ---
 # git commit
-A commit is the last step in our Git workflow.
-A commit permanently stores changes from the staging area inside the repository.
+* A commit is the last step in our Git workflow.
+* A commit permanently stores changes from the staging area inside the repository.
 the option -m followed by a message. Here's an example: git commit -m "Complete first line of dialogue"
 Standard Conventions for Commit Messages:
-* Must be in quotation marks
-* Written in the present tense
-* Should be brief (50 characters or less) when using -m
+- Must be in quotation marks
+- Written in the present tense
+- Should be brief (50 characters or less)
 ---
 # git log
 Often with Git, you'll need to refer back to an earlier version of a project. Commits are stored chronologically in the repository and can be viewed with `git log`<br/>
