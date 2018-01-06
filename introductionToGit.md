@@ -65,7 +65,7 @@
 
 # git diff
 Since the file is tracked, we can check the differences between the working directory and the staging area 
-<br/>with:`git diff filename`<br>
+<br/>with:`git diff filename`<br/>
 Here, filename is Example.java so `git diff Example.java`
 ---
 
