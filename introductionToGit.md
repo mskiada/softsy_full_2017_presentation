@@ -36,9 +36,9 @@
 * Untracked means that Git sees the file but has not started tracking changes yet.
 ---
 # .gitignore
-* echo "a gitignore file">> .gitignore
-* echo "" > .gitignore
-* echo null > .gitignore
+* `echo "a gitignore file">> .gitignore`
+* `echo "" > .gitignore`
+* `echo null > .gitignore`
 ---
 # Saving changes to the repository
 1. Find direcory `cd /path/to/project `
@@ -54,9 +54,10 @@ We can add a file to the staging area with: `git add Example.java`
 
 ---
 # git diff
-Since the file is tracked, we can check the differences between the working directory and the staging area with:
-`git diff filename`
+Since the file is tracked, we can check the differences between the working directory and the staging area 
+<br/>with:`git diff filename`<br>
 Here, filename is Example.java so `git diff Example.java`
+
 ---
 # git commit
 * A commit is the last step in our Git workflow.
