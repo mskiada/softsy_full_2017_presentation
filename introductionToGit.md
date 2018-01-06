@@ -6,7 +6,7 @@
 	    ```git --version```
 ---
 # Set config values
-<p>Configure your Git username and email</p>
+###### Configure your Git username and email
 `git config --global user.name "Marianna Skiada"`<br/>
 `git config --global user.email "mskiada@aueb.gr"`<br/>
 `git config --list`
