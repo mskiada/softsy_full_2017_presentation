@@ -10,7 +10,7 @@
 #### Configure your Git username and email
 *  `git config  --global user.name "Marianna Skiada" `
 *  `git config  --global user.email "mskiada@aueb.gr" `
-*  `git config  --list`
+*  `git config  --dlist`
 ---
 
 # Help
