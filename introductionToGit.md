@@ -122,7 +122,7 @@ You could rewrite the line how it was originally, but what if you forgot the exa
 
 ----
 # git branch (2)
-* Create a new branch:  `git brach mitsos-branch` 
+* Create a new branch:  `git branch mitsos-branch` 
 * Be sure to name your branch something that describes the purpose of the branch. 
 * Also, branch names can’t contain whitespaces: mitsos-branch and mitsos_branch valid branch names, but mitsos branch is not.
 
