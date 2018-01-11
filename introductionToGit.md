@@ -31,7 +31,7 @@
 
 ---
 # Remove Repository
-*  `rm -rt .git`
+*  `rm -rf .git`
 *  `rd /s /q .git`
 
 ---
