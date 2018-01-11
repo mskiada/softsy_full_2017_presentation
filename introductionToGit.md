@@ -41,6 +41,7 @@
 
 ---
 # .gitignore
+* `$ touch .gitignore` or
 * `echo "a gitignore file">> .gitignore`
 * `echo "" > .gitignore`
 * `echo null > .gitignore`
